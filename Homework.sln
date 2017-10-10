@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.UI", "..\Source\Homework.UI\Homework.UI.csproj", "{E37BA738-5E19-4534-9374-F365D4916433}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.UI", "Source\Homework.UI\Homework.UI.csproj", "{E37BA738-5E19-4534-9374-F365D4916433}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Test", "Source\Homework.Test\Homework.Test.csproj", "{1B2FC018-A80A-41E7-AEFA-ED28FD693CB9}"
 EndProject

@@ -59,7 +59,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Source\Homework.UI\Homework.UI.csproj">
+    <ProjectReference Include="..\Homework.UI\Homework.UI.csproj">
       <Project>{e37ba738-5e19-4534-9374-f365d4916433}</Project>
       <Name>Homework.UI</Name>
     </ProjectReference>
