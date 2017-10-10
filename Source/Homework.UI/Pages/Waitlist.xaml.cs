@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Homework.UI.Pages
 {
-    public partial class Home
+    public partial class Waitlist
     {
-        public Home ( )
+        public Waitlist ( )
         {
             InitializeComponent ( );
         }
     }
 
-    public abstract class HomeBase : Utilis.UI.Win.BasePage<Core.ViewModel.Home>
+    public abstract class WaitlistBase : Utilis.UI.Win.BasePage<Core.ViewModel.Waitlist>
     {
 
     }

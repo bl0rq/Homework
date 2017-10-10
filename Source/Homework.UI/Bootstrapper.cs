@@ -34,7 +34,7 @@ namespace Homework.UI
             var service = StartNavigation ( mainWindow );
 
             Utilis.Messaging.Bus.Instance.Send ( new Core.Messages.LoadingProgress ( "Showing initial Page..." ) );
-            service.Navigate ( Utilis.ServiceLocator.Instance.GetInstance<Core.ViewModel.Home> ( ) );
+            service.Navigate ( Utilis.ServiceLocator.Instance.GetInstance<Core.ViewModel.Waitlist> ( ) );
         }
 
         private Utilis.UI.Navigation.IService StartNavigation ( Windows.FrameContainerWindow mainWindow )
