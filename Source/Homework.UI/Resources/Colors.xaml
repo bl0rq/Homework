@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="ErrorForeground"
+                     Color="#DD0000" />
+
+    <SolidColorBrush x:Key="brsPositiveBackground"
+                     Color="LightGreen" />
+    <SolidColorBrush x:Key="brsNegativeBackground"
+                     Color="#EEEE33" />
+    <SolidColorBrush x:Key="brsErrorBackground"
+                     Color="#CC3333" />
+    <SolidColorBrush x:Key="brsIndeterminedBackground"
+                     Color="LightGray" />
+    <SolidColorBrush x:Key="brsNotReadyBackground"
+                     Color="#FF5555FF" />
+    <SolidColorBrush x:Key="logoMainBrush"
+                     Color="#FF903373" />
+    <SolidColorBrush x:Key="brsLightBorder"
+                     Color="DarkGray" />
+
+    <!--  Instead of using black-black or white-white, these are a 10% brightness and a 98% brightness versions of our Fives Color (in HSV space)  -->
+    <SolidColorBrush x:Key="Black"
+                     Color="#1a0914" />
+    <SolidColorBrush x:Key="White"
+                     Color="#fefbfd" />
+</ResourceDictionary>

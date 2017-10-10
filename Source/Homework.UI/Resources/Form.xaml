@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls">
+    <Style x:Key="styLabel"
+           TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource RegularFontSize}" />
+        <Setter Property="Margin" Value="0,0,3,2" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+    </Style>
+    <Style x:Key="styValue"
+           TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
+        <Setter Property="Margin" Value="10,0,20,7" />
+        <Setter Property="Padding" Value="5,0,5,0" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <!--<Setter Property="Background"
+                Value="#9bc7e4" />-->
+
+    </Style>
+
+    <Style x:Key="styLargeValue"
+           BasedOn="{StaticResource styValue}"
+           TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource ExtraLargeFontSize}" />
+    </Style>
+
+    <Style x:Key="styExtraLargeValue"
+           BasedOn="{StaticResource styValue}"
+           TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource ExtraExtraLargeFontSize}" />
+    </Style>
+
+    <Style x:Key="styValueDropDown"
+           TargetType="ComboBox">
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
+        <Setter Property="Margin" Value="10,0,15,10" />
+        <Setter Property="Padding" Value="5,5,10,5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+    <Style x:Key="styLargeValueDropDown"
+           BasedOn="{StaticResource styValueDropDown}"
+           TargetType="ComboBox">
+        <Setter Property="FontSize" Value="{StaticResource ExtraLargeFontSize}" />
+    </Style>
+
+    <Style x:Key="styBlockHeader"
+           TargetType="TextBlock">
+        <Setter Property="FontSize" Value="{StaticResource ExtraLargeFontSize}" />
+    </Style>
+
+    <Style x:Key="styEditTextValue"
+           TargetType="TextBox">
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
+        <Setter Property="Margin" Value="10,5,20,5" />
+        <Setter Property="Padding" Value="5,5,10,5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Style.Triggers>
+            <Trigger Property="IsReadOnly" Value="True">
+                <Setter Property="BorderBrush" Value="#F1F1F1" />
+                <Setter Property="Background" Value="#F1F1F1" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="styEditTextMultilineValue"
+           BasedOn="{StaticResource styEditTextValue}"
+           TargetType="TextBox">
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+    </Style>
+
+    <Style x:Key="styEditToggleButton"
+           TargetType="CheckBox">
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
+        <Setter Property="Margin" Value="10,20,20,10" />
+        <Setter Property="Padding" Value="5,5,10,5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+
+    <Style x:Key="styNumericBox"
+           TargetType="controls:NumericUpDown">
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
+        <Setter Property="Margin" Value="10,0,15,10" />
+        <Setter Property="Padding" Value="5,5,10,5" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+</ResourceDictionary>
