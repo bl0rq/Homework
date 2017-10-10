@@ -13,10 +13,51 @@
                     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock Text="//TODO: UI"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="{StaticResource ExtraExtraLargeFontSize}" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Name" />
+        <TextBox Grid.Row="1"
+                 Width="100"
+                 Margin="0,0,10,0"
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Column="1"
+                   Text="Phone Number" />
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Width="100"
+                 Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" />
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="2"
+                    Orientation="Horizontal">
+            <Button Command="{Binding Enqueue}"
+                    Content="Add" />
+            <Button Command="{Binding Dequeue}"
+                    Content="Remove" />
+
+        </StackPanel>
+
+        <ListBox Grid.Row="2"
+                 Grid.ColumnSpan="3"
+                 Margin="10"
+                 ItemsSource="{Binding Persons}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </pages:WaitlistBase>
 

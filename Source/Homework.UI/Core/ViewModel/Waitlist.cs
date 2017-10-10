@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework.UI.Core.ViewModel
 {
+    [Utilis.RegisterService]
     public class Waitlist : Utilis.UI.ViewModel.Base
     {
         private readonly Service.Waitlist m_svcWaitlist;
