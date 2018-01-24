@@ -120,8 +120,11 @@ namespace Waitlist.UI.Core.ViewModel
         }
     }
 
-    public class WaitlistDesign : WaitlistMain
+    public class WaitlistMainDesign : WaitlistMain
     {
-
+        public WaitlistMainDesign()
+        {
+            
+        }
     }
 }
